@@ -1,12 +1,12 @@
 "use client";
 
+import { isSystemDark } from "@/helpers/system-theme";
 import { useTheme } from "next-themes";
 import Highlight, { defaultProps, type Language } from "prism-react-renderer";
 import darkTheme from "prism-react-renderer/themes/nightOwl";
 import lightTheme from "prism-react-renderer/themes/nightOwlLight";
 import { FC, useEffect, useState } from "react";
 
-const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 interface CodeProps {
   code: string;
   show: boolean;

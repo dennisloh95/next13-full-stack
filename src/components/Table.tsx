@@ -1,12 +1,11 @@
 "use client";
 
+import { isSystemDark } from "@/helpers/system-theme";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { DataGrid, GridColDef, GridColumnHeaderParams } from "@mui/x-data-grid";
 import { ApiRequest } from "@prisma/client";
 import { useTheme } from "next-themes";
 import { FC } from "react";
-
-const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 const columnsDraft: GridColDef[] = [
   {
