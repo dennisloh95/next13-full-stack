@@ -42,7 +42,7 @@ export default function Home() {
               quality={100}
               style={{ objectFit: "contain" }}
               fill
-              src={image}
+              src={images[0]}
               alt="credit: midjourney ai image generator"
             />
           </div>
